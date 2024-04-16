@@ -2,11 +2,11 @@ const keys = document.querySelectorAll('.piano-keys .key');
 const volume = document.querySelector('.volume-slider input');
 const keyCheckbox = document.querySelector('.keys-checkbox input');
 
-let audio = new Audio("/tunes/a.wav")
+let audio = new Audio("./tunes/a.wav")
 let allKeys = [];
 
 const playAudio = (key) => {
-    audio.src = `/tunes/${key}.wav`
+    audio.src = `./tunes/${key}.wav`
     
     audio.play()
     const clickKey = document.querySelector(`[data-key="${key}"]`)
